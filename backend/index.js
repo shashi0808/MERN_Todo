@@ -24,7 +24,7 @@ if (process.env.NODE_ENV === 'production') {
 // Middleware
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://your-vercel-domain.vercel.app'] // Will be updated after Vercel deployment
+    ? ['https://mern-todo-lovat.vercel.app']
     : ['http://localhost:3000', 'http://localhost:3001', 'http://localhost:3002'],
   credentials: true
 };
