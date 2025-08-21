@@ -67,7 +67,7 @@ Complete guide to deploy the MERN Todo application using Vercel (Frontend), Rend
    - Add these variables:
      ```
      NODE_ENV=production
-     MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/todoapp?retryWrites=true&w=majority
+     MONGODB_URI=mongodb+srv://<username>:<password>@<cluster-url>/todoapp?retryWrites=true&w=majority
      JWT_SECRET=your_super_secure_jwt_secret_key_here
      ```
 
@@ -147,7 +147,7 @@ Complete guide to deploy the MERN Todo application using Vercel (Frontend), Rend
 ### Backend (Render)
 ```
 NODE_ENV=production
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/todoapp?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://<username>:<password>@<cluster-url>/todoapp?retryWrites=true&w=majority
 JWT_SECRET=your_super_secure_jwt_secret_key_here
 ```
 
