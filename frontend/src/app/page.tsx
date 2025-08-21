@@ -107,7 +107,7 @@ export default function Home() {
   const handleAuthSubmit = async (data: { name?: string; email: string; password: string }) => {
     const success = authMode === 'login' 
       ? await login(data.email, data.password)
-      : await register(data.name, data.email, data.password);
+      : await register(data.name || '', data.email, data.password);
     
     if (success) {
       loadTasks(); // Reload tasks after login
