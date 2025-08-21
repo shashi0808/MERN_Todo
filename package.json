@@ -1,0 +1,42 @@
+{
+  "name": "mern-todo-app",
+  "version": "1.0.0",
+  "description": "A full-stack Todo application built with MERN stack featuring authentication, task management, filtering, sorting, and responsive design",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "deploy:frontend": "cd frontend && npm run build && vercel --prod",
+    "deploy:backend": "echo 'Deploy backend through Render dashboard'"
+  },
+  "keywords": [
+    "MERN", 
+    "Todo", 
+    "React", 
+    "Next.js", 
+    "Node.js", 
+    "MongoDB", 
+    "Express", 
+    "Authentication",
+    "Responsive",
+    "TypeScript",
+    "Tailwind CSS"
+  ],
+  "author": "MERN Todo App",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/mern-todo.git"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}

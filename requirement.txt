@@ -1,0 +1,32 @@
+Objective:
+Build a simple yet well-structured To-Do application using the MERN stack. The frontend must be built with Next.js. This assignment is meant to test your ability to design clean APIs, handle CRUD operations, and deploy a full-stack project.
+Requirements:
+•	Tech Stack:
+•	Frontend: Next.js (React framework)
+•	Backend: Node.js + Express
+•	Database: MongoDB (Atlas preferred)
+•	Features:
+•	Create a new task (title, description, status – e.g., pending/done).
+•	Read tasks (display all tasks in a list).
+•	Update task details (edit title, description, or status).
+•	Delete a task.
+•	Tasks should persist in the database (not just frontend state).
+•	Additional (Bonus Points):
+•	Implement user authentication (sign up / login).
+•	Add filtering/sorting of tasks (e.g., show only completed tasks).
+•	Use server-side rendering (SSR) in Next.js for better SEO.
+•	Responsive UI with clean design.
+Deliverables:
+•	GitHub Repository containing:
+•	 Clean code with proper commits.
+•	 A README.md explaining:
+•	 Project setup instructions.
+•	 Tech stack used.
+•	 Any assumptions or bonus features implemented.
+
+Evaluation Criteria:
+•	Code quality & project structure.
+•	Functionality (CRUD operations must work end-to-end).
+•	UI/UX design & responsiveness.
+•	Deployment readiness (works on given link).
+•	Bonus features (if implemented).
