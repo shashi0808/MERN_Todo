@@ -42,7 +42,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
     if (token && userData) {
       try {
         setUser(JSON.parse(userData));
-      } catch (error) {
+      } catch {
         localStorage.removeItem('token');
         localStorage.removeItem('user');
       }

@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 interface AuthFormProps {
   mode: 'login' | 'register';
-  onSubmit: (data: any) => void;
+  onSubmit: (data: { name?: string; email: string; password: string }) => void;
   onModeSwitch: () => void;
   loading?: boolean;
 }

@@ -23,7 +23,7 @@ export default function Home() {
   useEffect(() => {
     setMounted(true);
     loadTasks();
-  }, [sortBy]);
+  }, [sortBy]); // loadTasks is stable, safe to omit
 
   const loadTasks = async () => {
     try {
@@ -104,7 +104,7 @@ export default function Home() {
     done: tasks.filter(task => task.status === 'done').length,
   };
 
-  const handleAuthSubmit = async (data: any) => {
+  const handleAuthSubmit = async (data: { name?: string; email: string; password: string }) => {
     const success = authMode === 'login' 
       ? await login(data.email, data.password)
       : await register(data.name, data.email, data.password);
